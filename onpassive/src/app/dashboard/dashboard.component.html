@@ -1,0 +1,115 @@
+<h1>Welcome to dashboard!</h1>
+
+<h2>Logged In User details</h2>
+ <table>
+    <thead>
+        <tr>
+            <th>
+                User Id
+            </th>
+            <th>
+                Name
+            </th>
+
+            <th>
+                Courses
+            </th>
+            <th>
+                City
+            </th>
+            <th>
+                State
+            </th>
+            <th>
+                Country
+            </th>
+
+        </tr>
+    </thead>
+        <tr>
+        <td>
+            <span>{{id}}</span>
+        </td>
+
+        <td>
+            <span>{{username}}</span>
+        </td>
+        <td>
+            <span>{{courses}}</span>
+        </td>
+        <td>
+
+            <span>{{city}} </span>
+
+        </td>
+        <td>
+
+            <span>{{state}} </span>
+        </td>
+        <td>
+
+            <span>{{country}} </span>
+        </td>
+    </tr>
+</table>
+
+<h2> Total Users List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>
+                User Id
+            </th>
+            <th>
+                Name
+            </th>
+
+            <th>
+                Courses
+            </th>
+            <th>
+                City
+            </th>
+            <th>
+                State
+            </th>
+            <th>
+                Country
+            </th>
+
+        </tr>
+    </thead>
+        <tr  *ngFor="let item of data">
+        <td>
+            <span>{{item.id}}</span>
+        </td>
+
+        <td>
+            <span>{{item.username}}</span>
+        </td>
+        <td>
+            <span>{{item.courses}}</span>
+        </td>
+        <td>
+
+            <span>{{item.city}} </span>
+
+        </td>
+        <td>
+
+            <span>{{item.state}} </span>
+        </td>
+        <td>
+
+            <span>{{item.country}} </span>
+        </td>
+    </tr>
+</table>
+
+<!-- <div class="form-group col-sm-5">
+    <button class="btn btn-primary" (click)="logout()">
+        <span class="spinner-border spinner-border-sm mr-1"></span>
+        Logout 
+    </button>
+    
+</div> -->
